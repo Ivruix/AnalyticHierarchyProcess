@@ -1,0 +1,18 @@
+﻿<Page x:Class="AnalyticHierarchyProcess.FirstCriterionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnalyticHierarchyProcess"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FirstCriterionPage">
+
+    <Grid>
+        <Grid Height="400" VerticalAlignment="Center">
+            <Label Content="Enter the name of first criterion:" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="62" Margin="0,180,0,0" Foreground="#FF353B48" FontSize="25" BorderBrush="#FF353B48" VerticalContentAlignment="Center" SelectionBrush="#FF353B48" Padding="10,10,10,10"/>
+        </Grid>
+        <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+    </Grid>
+</Page>

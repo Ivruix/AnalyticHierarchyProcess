@@ -1,0 +1,42 @@
+﻿<Page x:Class="AnalyticHierarchyProcess.CurrentProjectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnalyticHierarchyProcess"
+      mc:Ignorable="d" 
+      Loaded="OnLoad"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CurrenProjectPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Row="0" Grid.Column="0" x:Name="listBoxGoal" Margin="10,10,10,10" BorderBrush="#FF353B48" Foreground="#FF353B48" Padding="10,10,10,10" FontSize="25" BorderThickness="2,2,2,2" HorizontalContentAlignment="Stretch"/>
+        <ListBox Grid.Row="1" Grid.Column="0" x:Name="listBoxCriteriaAndSubcriteria" Margin="10,10,10,10" BorderBrush="#FF353B48" Foreground="#FF353B48" Padding="10,10,10,10" FontSize="25" BorderThickness="2,2,2,2" HorizontalContentAlignment="Stretch"/>
+        <ListBox Grid.Row="2" Grid.Column="0" x:Name="listBoxAlternatives" Margin="10,10,10,10" BorderBrush="#FF353B48" Foreground="#FF353B48" Padding="10,10,10,10" FontSize="25" BorderThickness="2,2,2,2" HorizontalContentAlignment="Stretch"/>
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Click="CompareAgain" Content="Compare again"  BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" Margin="10,10,10,10"/>
+            <Button Grid.Row="1" Grid.Column="0" Click="SensitivityAnalysis" Content="Sensitivity analysis"  BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" Margin="10,10,10,10"/>
+            <Button Grid.Row="2" Grid.Column="0" Click="Save" Content="Save project"  BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" Margin="10,10,10,10"/>
+            <Button Grid.Row="3" Grid.Column="0" Click="Export" Content="Export to csv"  BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" Margin="10,10,10,10"/>
+            <Button Grid.Row="4" Grid.Column="0" Click="Exit" Content="Exit" Margin="10,10,10,10" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        </Grid>
+    </Grid>
+</Page>

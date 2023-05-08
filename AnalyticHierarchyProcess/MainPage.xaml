@@ -1,0 +1,20 @@
+﻿<Page x:Class="AnalyticHierarchyProcess.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnalyticHierarchyProcess"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+    <Grid>
+        <Grid Height="380" Width="550" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="AHP" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="125" Foreground="#FF353B48" Margin="0,-20,0,0"/>
+            <Label Content="Analytic Hierarchy Process" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#99353B48"/>
+            <Button Click="OpenProject" Content="Open project" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,300,0,0" Height="60" Width="200" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <Button Click="NewProject" Content="New project" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,225,0,0" Height="60" Width="200" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        </Grid>
+        <Button Click="Help" Content="Help" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Exit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+    </Grid>
+</Page>

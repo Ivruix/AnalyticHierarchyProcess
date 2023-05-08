@@ -1,0 +1,18 @@
+﻿<Page x:Class="AnalyticHierarchyProcess.CurrentCriteriaAndSubcriteriaPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnalyticHierarchyProcess"
+      mc:Ignorable="d" 
+      Loaded="OnLoad"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CurrentCriteriaAndSubcriteriaPage">
+
+    <Grid>
+        <Label Content="Click on criteria to add subcriteria:" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
+        <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <ListBox x:Name="listBox" Margin="218,124,218,124" BorderBrush="#FF353B48" Foreground="#FF353B48" Padding="10,10,10,10" FontSize="25" BorderThickness="2,2,2,2"/>
+
+    </Grid>
+</Page>
