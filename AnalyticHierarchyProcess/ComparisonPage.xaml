@@ -10,7 +10,7 @@
 
     <Grid>
         <Button Click="ViewMatrix" Content="View matrix" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="170" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
-        <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsDefault="True"/>
         <Grid VerticalAlignment="Center" Height="300">
             <Label x:Name="comparisonTitle" Content="" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="44" Foreground="#FF353B48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="69" VerticalAlignment="Top"/>
             <Slider x:Name="slider" Margin="0,216,0,0" SmallChange="1" Minimum="-8" Maximum="8" TickPlacement="Both" Foreground="#FF353B48" IsSnapToTickEnabled="True" HorizontalAlignment="Center" Width="700" IsMoveToPointEnabled="True" Height="43" VerticalAlignment="Top"/>

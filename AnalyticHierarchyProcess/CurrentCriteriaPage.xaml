@@ -13,7 +13,7 @@
         <Label Content="Current criteria:" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
         <Button Click="AddAnother" Content="Add another one" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="220
                 " BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
-        <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsDefault="True"/>
         <ListBox x:Name="listBox" Margin="218,124,218,124" BorderBrush="#FF353B48" Foreground="#FF353B48" Padding="10,10,10,10" FontSize="25" BorderThickness="2,2,2,2"/>
 
     </Grid>
