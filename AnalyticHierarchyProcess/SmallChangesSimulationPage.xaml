@@ -10,7 +10,7 @@
 
     <Grid>
         <WpfPlot x:Name="WpfPlot" Margin="90,30,90,130" Visibility="Hidden" Panel.ZIndex="1" />
-        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
         <Button x:Name="toggleButton" Click="ToggleSimulation" Content="Start simulation" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="219" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
         <Button Click="SaveResults" Content="Save results" HorizontalAlignment="Right" Margin="0,0,290,40" Width="200" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" Height="60" VerticalAlignment="Bottom"/>
         <Label Content="Start simulation to see results" HorizontalAlignment="Center" FontSize="25" Foreground="#7F353B48" VerticalAlignment="Center" Margin="0,0,0,70"/>

@@ -11,7 +11,7 @@
     <Grid>
         <Label x:Name="bottomLabel" Margin="60,0,0,40" FontSize="25" Foreground="#FF353B48" HorizontalAlignment="Left" Width="520" Height="60" VerticalAlignment="Bottom" VerticalContentAlignment="Center"/>
         <Grid x:Name="matrixGrid" Margin="120,85,120,125" ShowGridLines="True"/>
-        <Button Click="Done" Content="Done" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsDefault="True"/>
+        <Button Click="Done" Content="Done" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsDefault="True" IsCancel="True"/>
         <Label x:Name="label" Content="" HorizontalAlignment="Center" Margin="0,7,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
         <Label x:Name="additionalInfoLabel" Margin="60,0,0,20" FontSize="12" Foreground="#7F353B48" HorizontalAlignment="Left" Width="520" Height="30" VerticalAlignment="Bottom" VerticalContentAlignment="Center"/>
     </Grid>

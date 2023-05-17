@@ -10,7 +10,7 @@
 
     <Grid>
         <Label Content="Choose sensitivity analysis type:" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
-        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
         <Grid Margin="0,111,0,124" HorizontalAlignment="Center" Width="500">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>

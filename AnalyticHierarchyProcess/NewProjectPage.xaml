@@ -14,7 +14,7 @@
             <TextBox x:Name="textBox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="62" Margin="0,180,0,0" Foreground="#FF353B48" FontSize="25" BorderBrush="#FF353B48" VerticalContentAlignment="Center" SelectionBrush="#FF353B48" Padding="10,10,10,10"/>
         </Grid>
         <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsDefault="True"/>
-        <Button Click="Cancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Cancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
 
     </Grid>
 </Page>

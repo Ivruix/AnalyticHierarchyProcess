@@ -10,7 +10,7 @@
 
     <Grid>
         <Label x:Name="comparisonTitle" Content="" HorizontalAlignment="Center" Margin="0,10,0,0" FontSize="44" Foreground="#FF353B48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="69" VerticalAlignment="Top"/>
-        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,20" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,20" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
         <WpfPlot x:Name="WpfPlot" Margin="45,90,70,169" />
         <Grid Margin="0,0,0,100" Height="70" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>

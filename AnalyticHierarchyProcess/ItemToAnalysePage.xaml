@@ -19,6 +19,6 @@
             <ListBox Grid.Row="1" Grid.Column="0" x:Name="listBoxCriteriaAndSubcriteria" Margin="10,10,10,10" BorderBrush="#FF353B48" Foreground="#FF353B48" Padding="10,10,10,10" FontSize="25" BorderThickness="2,2,2,2" HorizontalContentAlignment="Stretch"/>
         </Grid>
         <Label Content="Choose item to analyse:" HorizontalAlignment="Center" Margin="0,7,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
-        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
+        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
     </Grid>
 </Page>
