@@ -23,6 +23,7 @@ namespace AnalyticHierarchyProcess
         public AddAnotherCriterionPage()
         {
             InitializeComponent();
+            textBox.Focus();
         }
 
         private void Back(object sender, RoutedEventArgs e)

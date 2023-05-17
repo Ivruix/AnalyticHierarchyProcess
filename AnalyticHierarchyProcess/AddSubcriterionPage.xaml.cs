@@ -24,6 +24,7 @@ namespace AnalyticHierarchyProcess
         public AddSubcriterionPage(string criterion)
         {
             InitializeComponent();
+            textBox.Focus();
             _criterion = criterion;
         }
 

@@ -23,6 +23,7 @@ namespace AnalyticHierarchyProcess
         public FirstOptionPage()
         {
             InitializeComponent();
+            textBox.Focus();
         }
 
         private void Confirm(object sender, RoutedEventArgs e)
