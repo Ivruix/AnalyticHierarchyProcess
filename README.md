@@ -37,7 +37,7 @@ Once the program is installed, you can launch and use it to perform AHP analysis
 
 1. Launch the program.
 2. Create new project (subsequent launches of the program will also allow to open previously saved projects).
-3. Enter the goal, creteria, subcriteria (if needed), and alternatives (options).
+3. Enter the goal, criteria, subcriteria (if needed), and alternatives (options).
 4. Perform all necessary pairwise comparisons using a handy slider scale.
 5. View the results of the AHP algorithm on the project page.
 6. Use the sensitivity analysis options to explore different scenarios and analyze the impact of changes on the decision-making process (prioritization of alternatives).
