@@ -8,10 +8,22 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="FirstOptionPage">
 
+    <Page.Resources>
+        <Style x:Key="WatermarkTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="Text" Value="New criterion" />
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                    <Setter Property="Text" Value=""/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
     <Grid>
         <Grid Height="400" VerticalAlignment="Center">
             <Label Content="Enter the name of first option:" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
-            <TextBox x:Name="textBox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="62" Margin="0,180,0,0" Foreground="#FF353B48" FontSize="25" BorderBrush="#FF353B48" VerticalContentAlignment="Center" SelectionBrush="#FF353B48" Padding="10,10,10,10"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="62" Margin="0,180,0,0" Foreground="#FF353B48" FontSize="25" BorderBrush="#FF353B48" VerticalContentAlignment="Center" SelectionBrush="#FF353B48" Padding="10,10,10,10"  Style="{StaticResource WatermarkTextBoxStyle}"/>
         </Grid>
         <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
         <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsDefault="True"/>
