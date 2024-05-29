@@ -24,6 +24,7 @@ namespace AnalyticHierarchyProcess
         {
             InitializeComponent();
             textBox.Focus();
+
         }
 
         private void Back(object sender, RoutedEventArgs e)
