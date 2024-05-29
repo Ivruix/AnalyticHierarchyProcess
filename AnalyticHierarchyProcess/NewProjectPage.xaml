@@ -17,7 +17,7 @@
                             <TextBox x:Name="textBox" Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                                      Foreground="{TemplateBinding Foreground}" Background="Transparent"
                                      BorderBrush="{TemplateBinding BorderBrush}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                            <TextBlock x:Name="Watermark" Text="Goal name" Foreground="Gray" Margin="10,0,0,0" VerticalAlignment="Center"
+                            <TextBlock x:Name="Watermark" Text="Goal" Foreground="Gray" Margin="10,0,0,0" VerticalAlignment="Center"
                                        IsHitTestVisible="False" Visibility="Collapsed"/>
                         </Grid>
                         <ControlTemplate.Triggers>
