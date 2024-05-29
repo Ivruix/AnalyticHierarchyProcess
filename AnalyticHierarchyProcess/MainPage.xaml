@@ -7,16 +7,33 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage">
+    
     <Grid>
-        <Grid Height="430" Width="550" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label Content="AHP" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="125" Foreground="#FF353B48" Margin="0,-20,0,0"/>
-            <Label Content="Analytic Hierarchy Process" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#99353B48"/>
-            <Button Click="OpenProject" Content="Open project" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,285,0,0" Height="60" Width="200" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
-            <Button Click="NewProject" Content="New project" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,210,0,0" Height="60" Width="200" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
-        </Grid>
-        <Button Click="Help" Content="Help" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
-        <Button Click="Exit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold"/>
-        <Label Content="Created by Kaverin Maxim, 2023" HorizontalAlignment="Center" FontSize="20" Foreground="#7F353B48" Margin="0,0,0,40" VerticalAlignment="Bottom"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
+            <Label Content="AHP" HorizontalAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="85" Foreground="#FF353B48" Margin="0,0,0,0"/>
+            <Label Content="Analytic Hierarchy Process" HorizontalAlignment="Center" FontSize="32" Foreground="#99353B48" Margin="0,0,0,5"/>
+            <Button Click="NewProject" Content="New project" HorizontalAlignment="Center" Margin="0,0,0,20" Height="60" Width="200" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2" FontSize="20" FontFamily="Segoe UI Semibold"/>
+            <Button Click="OpenProject" Content="Open project" HorizontalAlignment="Center" Height="60" Width="200" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20">
+            <Button Click="Exit" Content="Exit" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20">
+            <Button Click="Help" Content="Help" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        </StackPanel>
+
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Created by Kaverin Maxim, 2023" HorizontalAlignment="Center" FontSize="16" Foreground="#7F353B48" VerticalAlignment="Bottom" Margin="0,20,0,0"/>
 
     </Grid>
 </Page>
