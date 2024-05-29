@@ -14,21 +14,22 @@
             <Setter Property="Text" Value="New criterion" />
             <Style.Triggers>
                 <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                    <Setter Property="Text" Value=""/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+                <Trigger Property="Text" Value="New criterion">
+                    <Setter Property="Foreground" Value="Gray"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
     </Page.Resources>
 
-
     <Grid>
         <Grid Height="400" VerticalAlignment="Center">
             <Label Content="Enter the name of new criterion:" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF353B48"/>
-            <TextBox x:Name="textBox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="62" Margin="0,180,0,0" FontSize="25" BorderBrush="#FF353B48" VerticalContentAlignment="Center" SelectionBrush="#FF353B48" Padding="10,10,10,10" Style="{StaticResource WatermarkTextBoxStyle}"/>
-
+            <TextBox x:Name="textBox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="62" Margin="0,180,0,0" FontSize="25" BorderBrush="#FF353B48" VerticalContentAlignment="Center" SelectionBrush="#FF353B48" Padding="10,10,10,10" Style="{StaticResource WatermarkTextBoxStyle}"
+                     GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
         </Grid>
-                <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
+        <Button Click="Back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="#FF353B48" Background="White" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsCancel="True"/>
         <Button Click="Confirm" Content="Confirm" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,40" Height="60" Width="150" BorderBrush="#FF353B48" Foreground="White" Background="#FF353B48" BorderThickness="2,2,2,2" FontSize="25" FontFamily="Segoe UI Semibold" IsDefault="True"/>
-
     </Grid>
 </Page>

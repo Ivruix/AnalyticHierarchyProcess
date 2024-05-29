@@ -23,7 +23,6 @@ namespace AnalyticHierarchyProcess
         public NewProjectPage()
         {
             InitializeComponent();
-            textBox.Focus();
         }
 
         private void Confirm(object sender, RoutedEventArgs e)
@@ -40,6 +39,26 @@ namespace AnalyticHierarchyProcess
         private void Cancel(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+        }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == "Goal name")
+            {
+                textBox.Text = "";
+                textBox.Foreground = System.Windows.Media.Brushes.Black;
+            }
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = "New criterion";
+                textBox.Foreground = System.Windows.Media.Brushes.Gray;
+            }
         }
     }
 }
