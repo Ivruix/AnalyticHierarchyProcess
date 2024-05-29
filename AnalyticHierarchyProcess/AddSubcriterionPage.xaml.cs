@@ -24,6 +24,7 @@ namespace AnalyticHierarchyProcess
         public AddSubcriterionPage(string criterion)
         {
             InitializeComponent();
+            textBox.Focus();
             _criterion = criterion;
         }
 
@@ -40,26 +41,6 @@ namespace AnalyticHierarchyProcess
         private void Back(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
-        }
-
-        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            TextBox textBox = sender as TextBox;
-            if (textBox != null && textBox.Text == "Subcriterion")
-            {
-                textBox.Text = "";
-                textBox.Foreground = System.Windows.Media.Brushes.Black;
-            }
-        }
-
-        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            TextBox textBox = sender as TextBox;
-            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
-            {
-                textBox.Text = "New criterion";
-                textBox.Foreground = System.Windows.Media.Brushes.Gray;
-            }
         }
     }
 }
